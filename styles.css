@@ -1,0 +1,39 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo para el contenedor del menú */
+.menu {
+    text-align: center;
+}
+
+/* Estilos de los botones */
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estilo para cuando el mouse pasa por encima del botón */
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo para cuando el botón está activo (clicado) */
+.button:active {
+    transform: scale(0.98);
+}
