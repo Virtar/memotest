@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1> Actividad Adicional :DOM</h1>
+        <div id="infopag"></div>
+
+        <hr color="blue" size="4">
+        <div class="contenedor3 cont">
+            <h3 id="rojo">Centros de Formación CILSA</h3>
+            <p>Son centros tecnológicos comunitarios que tienen por objetivos promover el acceso y la capacitación en el uso de las Tecnologías de la Información y la Comunicación, y la preparación para la inclusión laboral de poblaciones en situación de vulnerabilidad social.<a href="https://www.cilsa.org">(Visita la Pagina de CILSA).</a>Se encuentran en las ciudades de Santa Fe, Rosario, Córdoba, Mar del Plata, La Plata, Mendoza y CABA.</p>
+            <h3>Ultimos Visitantes</h3>
+            <h4 id="primerParrafo"></h4>
+            <h3>Si quiere anotarse para los proximos cursos, presione "Añadir su Nombre"</h3>
+            <ul id="alumnos">
+                <li>Jesus Chirinos</li>
+                <li>Monica Figueredo</li>
+                <li>Florencia Campagna</li>
+                <li>Daniela Vallejos</li>
+                <li>Facundo Morales</li>
+            </ul>
+            
+            <input type="button" class="button" id="bot1"  value="Añadir su Nombre" onclick="añadirNombre();">
+            <input type="button" class="button" id="bot2" style="display: none;" value="Retirar su Nombre" onclick="retirarNombre();">
+
+            <hr color="blue" size="3">
+            
+            <h3>Conoce un poco más sobre nosotros</h3>
+            
+            <p id="texto">CILSA es una Organización No Gubernamental (O.N.G.) de bien público fundada el 14 de mayo de 1966 en la ciudad de SantaFe, República Argentina.<span id="adicional" class="oculto"> Tiene como MISION: Promover la inclusión plena de personas condiscapacidad y personas provenientes de sectores marginados de la sociedad como niños, niñas y adolescentes en situación devulnerabilidad social.</span></p>
+            
+            <a id="enlace" href="#" onclick="muestra(); return false;">Seguir leyendo.</a>
+            <a id="leerMenos" class="oculto" onclick="ocultarSpan();">Leer menos.</a>   
+
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script src="dom_cod.js"></script>
+</body>
+</html>
